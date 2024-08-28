@@ -4,6 +4,7 @@ import { PassportModule } from "./passport/passport.module";
 import { VisaModule } from "./visa/visa.module";
 import { AlertModule } from "./alert/alert.module";
 import { UserModule } from "./user/user.module";
+import { DashboardModule } from "./dashboard/dashboard.module";
 import { HealthModule } from "./health/health.module";
 import { PrismaModule } from "./prisma/prisma.module";
 import { SecretsManagerModule } from "./providers/secrets/secretsManager.module";
@@ -21,6 +22,7 @@ import { ApolloDriver, ApolloDriverConfig } from "@nestjs/apollo";
     VisaModule,
     AlertModule,
     UserModule,
+    DashboardModule,
     HealthModule,
     PrismaModule,
     SecretsManagerModule,
