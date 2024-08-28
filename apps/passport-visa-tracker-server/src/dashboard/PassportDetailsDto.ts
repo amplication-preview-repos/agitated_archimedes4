@@ -1,7 +1,9 @@
-import { Field } from "@nestjs/graphql";
+import { ArgsType, ObjectType, Field } from "@nestjs/graphql";
 import { ApiProperty } from "@nestjs/swagger";
 import { Type } from "class-transformer";
 
+@ArgsType()
+@ObjectType("PassportDetailsDtoObject")
 class PassportDetailsDto {
     @Field(() => String)
     @ApiProperty({
